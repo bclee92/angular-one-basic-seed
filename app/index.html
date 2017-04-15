@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
-  <script data-main="main.js" src="libs/require/require.js"></script>
 </head>
-<body>
-    <md-content ng-include = "'modules/navbar/navbar.html'"></md-content>
-    <md-content ui-view></md-content>
+<body ng-strict-di>
+    <home></home>
+
+    <script type="text/javascript" src="libs/angular-1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="modules/home/home.module.js"></script>
+    <script type="text/javascript" src="modules/home/home.component.js"></script>
 </body>
 </html>
